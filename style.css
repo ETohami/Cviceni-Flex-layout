@@ -1,18 +1,56 @@
-*, ::after, ::before { box-sizing: border-box; }
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+}
 
 body {
-	font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .sloupec {
-	padding: 20px;
+    padding: 20px;
 }
 
-.hlavicka { background-color: #2ecc71; }
-.hlavni   { background-color: #f1c40f; }
-.levy     { background-color: #3498db; }
-.pravy    { background-color: #e74c3c; }
-.paticka  { background-color: #9b59b6; }
+.hlavicka {
+    background-color: #2ecc71;
+}
+
+.hlavni {
+    background-color: #f1c40f;
+}
+
+.levy {
+    background-color: #3498db;
+}
+
+.pravy {
+    background-color: #e74c3c;
+}
+
+.paticka {
+    background-color: #9b59b6;
+}
+
 
 /* ------------- pod čáru přijdou tvé styly ------------- */
 
+.kontejner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hlavni {
+    order: 2;
+    flex-grow: 1;
+}
+
+.levy {
+    order: 1;
+    max-width: 20%;
+}
+
+.pravy {
+    order: 3;
+    max-width: 10%;
+}
